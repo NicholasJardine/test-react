@@ -5,9 +5,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-
+import logopic from '../smallproject/logo.svg'
 const Hello = props => (
-  <div>Hello {props.name}!</div>
+  <div>Hello {props.name}!
+
+<div className='navbar-pict'>
+  <nav>shoooo</nav>
+    <img src={logopic}/>
+  </div>
+  </div>
 )
 
 Hello.defaultProps = {
