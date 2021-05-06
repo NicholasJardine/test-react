@@ -5,8 +5,7 @@ import {FaBars} from 'react-icons/fa'
 
 const Navbar = () => {
     return (
-        <div className="navbar-pict">
-        <nav>
+        <nav className="navbar-pict">
             <div className="navbar-container">
                 <ul>
                     <li>
@@ -22,10 +21,11 @@ const Navbar = () => {
                     <LinkR to="#">blablabla</LinkR>
                     </li>
                 </ul>
+                    <nav className="navbtn">
+                    <LinkR>Sign In</LinkR>
+                    </nav>
             </div>
         </nav>
-
-        </div>
     )
 }
 

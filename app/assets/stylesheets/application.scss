@@ -12,8 +12,7 @@
 @import "components/index";
 @import "pages/index";
 
-.navbar-pict,
-nav {
+.navbar-pict {
   background: #000;
   height: 80px;
   display: flex;
@@ -59,6 +58,7 @@ nav {
     list-style: none;
     margin-right: -22px;
     text-align: center;
+    margin-top: 16px;
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -67,5 +67,34 @@ nav {
   li {
     height: 80px;
     padding: 0 24px;
+  }
+}
+
+.navbtn {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  a {
+    border-radius: 50px;
+    background: linear-gradient(90deg, #cf7500, #cca459);
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    width: 180px;
+    align-self: center;
+    height: 72%;
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      background: #fff;
+      color: #010606;
+    }
   }
 }
