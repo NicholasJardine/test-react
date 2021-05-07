@@ -10,6 +10,9 @@ const Navbar = () => {
                 <LinkR className="navlogo">
                     <img src={logoimage}></img>
                 </LinkR>
+                <div className="mobile-icon">
+                    <FaBars className="open-icon"></FaBars>
+                </div>
                 <ul>
                     <li>
                     <LinkR to="#">blablabla</LinkR>

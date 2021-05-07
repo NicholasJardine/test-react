@@ -126,3 +126,25 @@
     }
   }
 }
+
+.mobile-icon {
+  display: none;
+  z-index: 1;
+  max-width: 1100px;
+  padding: 0 24px;
+  margin-right: -72px;
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #cca459;
+  }
+}
+
+.open-icon {
+  color: #cca459;
+}
