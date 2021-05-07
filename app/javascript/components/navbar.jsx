@@ -2,6 +2,8 @@ import React from 'react'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 import {FaBars} from 'react-icons/fa'
+import {IconContext} from 'react-icons/lib'
+
 import logoimage from '../images/logo.png'
 const Navbar = () => {
     return (
@@ -15,16 +17,19 @@ const Navbar = () => {
                 </div>
                 <ul>
                     <li>
-                    <LinkR to="#">blablabla</LinkR>
+                    <LinkS className="white-and-gold" to='#' smooth={true} duration={500} spy={true} exact='true' offset= {-80}>About</LinkS>
                     </li>
                     <li>
-                    <LinkR to="#">blablabla</LinkR>
+                    <LinkR to="#">Discover</LinkR>
                     </li>
                     <li>
-                    <LinkR to="#">blablabla</LinkR>
+                    <LinkR to="#">News</LinkR>
                     </li>
                     <li>
-                    <LinkR to="#">blablabla</LinkR>
+                    <LinkR to="#">Search Actors</LinkR>
+                    </li>
+                    <li>
+                    <LinkR to="#">Sign Up</LinkR>
                     </li>
                 </ul>
                     <nav className="navbtn">
