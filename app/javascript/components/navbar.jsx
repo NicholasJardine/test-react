@@ -29,7 +29,7 @@ const Navbar = () => {
                     <LinkR to="#">Search Actors</LinkR>
                     </li>
                     <li>
-                    <LinkR to="#">Sign Up</LinkR>
+                    <a href="users/sign_up">Sign Up</a>
                     </li>
                 </ul>
                     <nav className="navbtn">
