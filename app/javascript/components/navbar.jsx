@@ -33,7 +33,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                     <nav className="navbtn">
-                    <LinkR>Sign In</LinkR>
+                    <a href="users/sign_in">Sign In</a>
                     </nav>
             </div>
         </nav>
