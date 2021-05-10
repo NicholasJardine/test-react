@@ -12,6 +12,11 @@
 @import "components/index";
 @import "pages/index";
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .navbar-pict {
   background: #000;
   height: 80px;
@@ -293,7 +298,6 @@ social-icon-link {
   padding: 0 2rem;
   width: 75%;
   color: #fff;
-  text-transformation: uppercase;
   line-height: 1;
   font-weight: bold;
   position: relative;
@@ -308,6 +312,7 @@ social-icon-link {
   font-size: clamp(2.5rem, 10vw, 4rem);
   margin-bottom: 2rem;
   margin-left: 340px;
+  text-transform: uppercase;
 
   margin-top: -360px;
   letter-spacing: 3px;
@@ -329,29 +334,28 @@ social-icon-link {
   }
 }
 
-// hero-button {
-//   border-radius: 50px;
-//   background: ${({primary}) => (primary ? 'linear-gradient(90deg,#cf7500,#CCA459)' : 'linear-gradient(90deg,#cf7500,#CCA459)')
-//   };
-//   white-space: nowrap;
-//   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')
-//   };
-//   color: ${({dark}) => (dark ? '#010606' : ' #010606')
-//   };
-//   font-size: ${({fontBig}) => (fontBig ? '20px' : ' 16px')
-//   };
+.hero-button {
+  border-radius: 50px;
+  background: linear-gradient(90deg, #cf7500, #cca459);
+  white-space: nowrap;
+  padding: 14px 48px;
+  color: #010606;
+  font-size: "20px";
+  text-decoration: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 700;
+  position: relative;
+  margin: 0 auto;
+  text-transform: uppercase;
 
-//   outline:none;
-//   display:flex;
-//   jusify-conten:center;
-//   align-items:center;
-//   transition: all 0.2s ease-in-out;
-//   cursor:pointer;
-//   font-weight:700;
-//   &:hover{
-//       transition: all 0.2s ease-in-out;
-//       color:${({dark}) => (dark ? '#010606':'#fff')};
-//       background: ${({primary}) => (primary ? 'linear-gradient(90deg,#cf7500,#f4f4f4)' : '#010606')};
-
-//   }
-// }
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #010606;
+    background: linear-gradient(90deg, #cf7500, #f4f4f4);
+  }
+}
