@@ -8,8 +8,11 @@ const Hero = () => {
     // const toggle = () => {
     //   setIsOpen(!isOpen)
     // }
+    const style = {
+        backgroundImage: `url(${heropic})`
+    }
     return (
-        <div className="hero-container">
+        <div className="hero-container" style={style}>
             <div className="hero-content">
 
                 <div className="hero-items">
