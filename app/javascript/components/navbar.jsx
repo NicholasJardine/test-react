@@ -17,10 +17,10 @@ const Navbar = () => {
                 </div>
                 <ul>
                     <li>
-                    <LinkS className="white-and-gold" to='#' smooth={true} duration={500} spy={true} exact='true' offset= {-80}>About</LinkS>
+                    <LinkS className="white-and-gold" to='about' smooth={true} duration={500} spy={true} exact='true' offset= {-80}>About</LinkS>
                     </li>
                     <li>
-                    <LinkR to="#">Discover</LinkR>
+                    <LinkS className="white-and-gold" to='discover' smooth={true} duration={500} spy={true} exact='true' offset= {-80}>Discover</LinkS>
                     </li>
                     <li>
                     <LinkR to="#">News</LinkR>
