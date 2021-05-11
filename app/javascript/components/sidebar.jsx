@@ -4,11 +4,16 @@ import {Link} from 'react-scroll';
 import {Link as LinkR} from 'react-router-dom';
 
 
+const style = {
+    opacity: `${({isOpen}) => (isOpen ? '100%' : '0')}`,
+    top: `${({isOpen}) => (isOpen ? '0' : '-100%')}`
+}
+
 
 
 const Sidebar = ({isOpen, toggle}) => {
     return (
-<aside className="sidebar-container" isOpen={isOpen} toggle={toggle}>
+<aside className="sidebar-container" isOpen={isOpen} toggle={toggle} style={style} >
     <div className="icon" onClick={toggle}>
         <FaBars className="close-icon"/>
     </div>
