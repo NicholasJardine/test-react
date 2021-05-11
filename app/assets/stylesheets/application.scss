@@ -660,10 +660,10 @@ label {
   border-radius: 50px;
   background: linear-gradient(90deg, #cf7500, #cca459);
   white-space: nowrap;
-  padding: "14px 48px";
+  padding: 14px 48px;
   color: #010606;
-  font-size: 20px;
-
+  font-size: "20px";
+  text-decoration: none;
   outline: none;
   display: flex;
   justify-content: center;
@@ -671,9 +671,12 @@ label {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   font-weight: 700;
+
+  text-transform: uppercase;
+
   &:hover {
     transition: all 0.2s ease-in-out;
-    color: #fff;
-    background: (90deg, #cf7500, #f4f4f4);
+    color: #010606;
+    background: linear-gradient(90deg, #cf7500, #f4f4f4);
   }
 }
