@@ -16,6 +16,9 @@ const InfoSection = () => {
                             <h1 className="heading">Showcase your talent</h1>
                             <p className="subtitle">Sign up and become a part of a database of actors. Become more accessible and discoverable.Casting agents can send out casting briefs directly to actors and receive their audition tapes directly to their profiles. With a dashboard to help them manage their auditions.</p>
                         </div>
+                        <div className="btn-wrap">
+                            <a href="users/sign_up">Get Started</a>
+                        </div>
                     </div>
                     <div className="column-2">
                         <div className="img-wrap">
