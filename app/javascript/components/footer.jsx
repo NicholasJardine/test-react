@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 import {FaBars} from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
-
+import {FaFacebook, FaInstagram, FaTwitter, FaLinkedin,FaYoutube} from 'react-icons/fa';
 const Footer = () => {
     return (
         <footer className="footer-container">
@@ -44,6 +44,20 @@ const Footer = () => {
                         </div>
 
                     </div>
+                </div>
+                <div className="social-media">
+                    <div className="social-media-wrap">
+                      <Link to="#" className="social-logo">Pictor</Link>  
+                      <small className="web-rights">Pictor © 2021 All rights reserved.</small>
+                      <div className="social-icons">
+                          <a className="social-icon-link" href="#" target="_blank" aria-label="Facebook" >                                <FaFacebook /></a>
+                          <a className="social-icon-link" href="#" target="_blank" aria-label="Instagram" >                                <FaInstagram /></a>
+                          <a className="social-icon-link" href="#" target="_blank" aria-label="Youtube" >                                <FaYoutube /></a>
+                          <a className="social-icon-link" href="#" target="_blank" aria-label="Twitter" >                                <FaTwitter /></a>
+                          <a className="social-icon-link" href="#" target="_blank" aria-label="Linkedin" >                                <FaLinkedin /></a>
+                      </div>
+                    </div>
+
                 </div>
             </div>
         </footer>
