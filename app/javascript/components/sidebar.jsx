@@ -42,9 +42,9 @@ import {Link as LinkR} from 'react-router-dom';
 
 
 
-// const Sidebar = ({isOpen, toggle}) => {
+// const Sidebar = ({toggle}) => {
 //     return (
-// <aside className="sidebar-container" isOpen={isOpen} toggle={toggle} >
+// <aside className={this.state.clicked ? 'clicked-sidebar' : 'unclicked-sidebar'} onClick={toggle}  >
 //     <div className="icon" onClick={toggle}>
 //         <FaTimes className="close-icon"/>
 //     </div>
@@ -77,23 +77,22 @@ import {Link as LinkR} from 'react-router-dom';
 
 
 
-class Sidebar extends Component{
-    constructor(props){
-        super(props);
-        this.state={
-          clicked: false  
-        };
-    }
+const Sidebar = ({isOpen, toggle}) => {
+    // constructor(props){
+    //     super(props);
+    //     this.state={
+    //       clicked: false  
+    //     };
+    // }
 
-    handleClick = () => {
-        this.setState({
-            clicked: !this.state.clicked
-        });
-    }
-    render(){
+    // handleClick = () => {
+    //     this.setState({
+    //         clicked: !this.state.clicked
+    //     });
+    // }
         return(
-                <aside className={this.state.clicked ? 'clicked-sidebar' : 'unclicked-sidebar'} onClick={this.handleClick} >
-                    <div className="icon" onClick={this.handleClick}>
+                <aside isOpen={isOpen} className={isOpen ? 'clicked-sidebar' : 'unclicked-sidebar'}  onClick={toggle} >
+                    <div className="icon" onClick={toggle}>
                         <FaTimes className="close-icon"/>
                     </div>
                     <div className="sidebar-wrapper">
@@ -120,5 +119,4 @@ class Sidebar extends Component{
 
         )
     }
-}
 export default Sidebar;

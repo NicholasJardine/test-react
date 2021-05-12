@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {Component, useState} from 'react'
 import Navbar from './navbar'
 import Footer from './footer'
 import Hero from './hero'
@@ -14,8 +14,8 @@ const App = () => {
     return (
         <>
         <Tester/>
-        <Sidebar></Sidebar>
-        <Navbar/>
+        <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
+        <Navbar toggle={toggle}/>
         <Hero/>
         <InfoSection/>
         <InfoComp/>
@@ -26,3 +26,35 @@ const App = () => {
 
 export default App
 
+
+// class App extends Component{
+//   constructor(props){
+//       super(props);
+//       this.state={
+//         clicked: false  
+//       };
+//   }
+
+//       toggle = () => {
+//       this.setState({
+//           clicked: !this.state.clicked
+//       });
+//   }
+//   render(){
+//       return(
+//         <>
+//         <Tester/>
+//         <Sidebar></Sidebar>
+//         <Navbar/>
+//         <Hero/>
+//         <InfoSection/>
+//         <InfoComp/>
+//         <Footer/>
+        
+//         </>
+        
+
+//       )
+//   }
+// }
+// export default App;
