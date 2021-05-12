@@ -14,13 +14,13 @@ const Sidebar = ({isOpen, toggle}) => {
                     <div className="sidebar-wrapper">
                         <ul className="sidebar-menu">
             
-                    <Link className="sidebar-link" to='about' smooth={true} duration={500} spy={true} exact='true' offset= {-80}>About</Link>
+                    <Link className="sidebar-link" to='about' smooth={true} duration={500} spy={true} exact='true' offset= {-80} onClick={toggle}>About</Link>
                  
-                    <Link className="sidebar-link" to='discover' smooth={true} duration={500} spy={true} exact='true' offset= {-80}>Discover</Link>
-                    <Link className="sidebar-link" to='discover' smooth={true} duration={500} spy={true} exact='true' offset= {-80}>News</Link>
-                            <a className="sidebar-link" herf="users/sign_up">
-                                Sign Up
-                            </a> 
+                    <Link className="sidebar-link" to='discover' smooth={true} duration={500} spy={true} exact='true' offset= {-80} onClick={toggle}>Discover</Link>
+                    <Link className="sidebar-link" to='discover' smooth={true} duration={500} spy={true} exact='true' offset= {-80} onClick={toggle}>News</Link>
+                    
+                    <a href="users/sign_up" className="sidebar-link">Sign Up</a>
+                    
                             <Link className="sidebar-link">
                                 About
                             </Link>
