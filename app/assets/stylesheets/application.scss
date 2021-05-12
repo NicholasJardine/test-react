@@ -792,3 +792,40 @@ label {
     background: linear-gradient(90deg, #cf7500, #f4f4f4);
   }
 }
+
+.clicked {
+  color: red;
+}
+
+.not-clicked {
+  color: green;
+}
+
+.clicked-sidebar {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  z-index: 999;
+  position: fixed;
+  background: #0d0d0d;
+  top: 0;
+  left: 0;
+  transition: 0.3s aease-in-and-out;
+  opacity: 100%;
+  top: 0;
+}
+.unclicked-sidebar {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  z-index: 999;
+  position: fixed;
+  background: #0d0d0d;
+  top: 0;
+  left: 0;
+  transition: 0.3s aease-in-and-out;
+  opacity: 0;
+  top: -100%;
+}

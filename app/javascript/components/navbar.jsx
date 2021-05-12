@@ -5,14 +5,14 @@ import {FaBars} from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
 
 import logoimage from '../images/logo.png'
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <nav className="navbar-pict">
             <div className="navbar-container">
                 <LinkR className="navlogo">
                     <img src={logoimage}></img>
                 </LinkR>
-                <div className="mobile-icon">
+                <div onClick={toggle} className="mobile-icon">
                     <FaBars className="open-icon"></FaBars>
                 </div>
                 <ul>
