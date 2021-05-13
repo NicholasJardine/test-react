@@ -13,7 +13,6 @@ const App = () => {
     }
     return (
         <>
-        <Tester/>
         <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
         <Navbar toggle={toggle}/>
         <Hero/>
